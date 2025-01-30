@@ -6,31 +6,32 @@ function ViewProductModal({ product, onClose }) {
       <div className="modal">
         <h2>Product Details</h2>
         <div className="product-details">
-          <img src={product.image} alt={product.name} className="product-image" />
-          
+          {/* Displaying the correct attributes from the backend */}
+          <img src={product.productImageUrl} alt={product.productName} className="product-image" />
+
           <div className="detail-group">
             <label>Name:</label>
-            <p>{product.name}</p>
+            <p>{product.productName}</p>
           </div>
 
           <div className="detail-group">
             <label>Brand:</label>
-            <p>{product.brand}</p>
+            <p>{product.productBrand}</p>
           </div>
 
           <div className="detail-group">
             <label>Price:</label>
-            <p>${product.price}</p>
+            <p>Rs{product.productPrice}</p>
           </div>
 
           <div className="detail-group">
-            <label>Status:</label>
-            <p>{product.status}</p>
+            <label>Category:</label>
+            <p>{product.productCategory}</p>
           </div>
 
           <div className="detail-group">
-            <label>Description:</label>
-            <p>{product.description}</p>
+            <label>User ID:</label>
+            <p>{product.productUserId}</p>
           </div>
         </div>
 
@@ -42,4 +43,4 @@ function ViewProductModal({ product, onClose }) {
   )
 }
 
-export default ViewProductModal 
+export default ViewProductModal;
