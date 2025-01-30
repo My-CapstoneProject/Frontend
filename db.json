@@ -1,0 +1,427 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "name": "Admin User",
+      "email": "admin@example.com"
+    },
+    {
+      "id": "2",
+      "username": "shop1",
+      "password": "shop123",
+      "role": "SHOPKEEPER",
+      "status": "ACTIVE",
+      "storeId": "STORE001",
+      "name": "Shop Manager",
+      "email": "shop1@example.com"
+    },
+    {
+      "id": "3",
+      "username": "shop2",
+      "password": "shop123",
+      "role": "SHOPKEEPER",
+      "name": "Shop Keeper 2",
+      "email": "shop2@example.com",
+      "storeId": "STORE002"
+    }
+  ],
+  "pending_users": [
+    {
+      "id": "3",
+      "username": "newshop",
+      "password": "shop123",
+      "role": "SHOPKEEPER",
+      "status": "PENDING",
+      "storeId": "STORE002",
+      "name": "New Shop Owner",
+      "createdAt": "2024-03-15T10:00:00.000Z"
+    }
+  ],
+  "stores": [
+    {
+      "id": "STORE001",
+      "name": "Store One",
+      "location": "Location 1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "STORE002",
+      "name": "Store Two",
+      "location": "Location 2",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "store1",
+      "name": "Downtown Market",
+      "address": "123 Main St",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "store2",
+      "name": "Suburb Store",
+      "address": "456 Oak Ave",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "1",
+      "name": "Downtown Store",
+      "region": "Central",
+      "ownerName": "John Doe",
+      "status": "ACTIVE",
+      "createdAt": "2024-03-20T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Uptown Market",
+      "region": "North",
+      "ownerName": "Jane Smith",
+      "status": "ACTIVE",
+      "createdAt": "2024-03-19T15:30:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Organic Bananas",
+      "brand": "Fresh Farms",
+      "category": "Fruits",
+      "price": 2.99,
+      "stock": 150,
+      "storeId": "store1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "2",
+      "name": "Whole Milk",
+      "brand": "Dairy Best",
+      "category": "Dairy",
+      "price": 3.49,
+      "stock": 75,
+      "storeId": "store1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "3",
+      "name": "Wheat Bread",
+      "brand": "Healthy Bake",
+      "category": "Bakery",
+      "price": 2.49,
+      "stock": 50,
+      "storeId": "store1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "4",
+      "name": "Chicken Breast",
+      "brand": "Fresh Meats",
+      "category": "Meat",
+      "price": 8.99,
+      "stock": 45,
+      "storeId": "store2",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "5",
+      "name": "Cola",
+      "brand": "Refresho",
+      "category": "Beverages",
+      "price": 1.99,
+      "stock": 200,
+      "storeId": "store2",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "6",
+      "name": "Potato Chips",
+      "brand": "Crunchy's",
+      "category": "Snacks",
+      "price": 3.99,
+      "stock": 100,
+      "storeId": "store1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "7",
+      "name": "Tomatoes",
+      "brand": "Fresh Farms",
+      "category": "Vegetables",
+      "price": 2.49,
+      "stock": 80,
+      "storeId": "store2",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "8",
+      "name": "Greek Yogurt",
+      "brand": "Dairy Best",
+      "category": "Dairy",
+      "price": 4.99,
+      "stock": 60,
+      "storeId": "store1",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "9",
+      "name": "Orange Juice",
+      "brand": "Fresh Squeeze",
+      "category": "Beverages",
+      "price": 4.49,
+      "stock": 40,
+      "storeId": "store2",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "10",
+      "name": "Chocolate Bar",
+      "brand": "Sweet Treats",
+      "category": "Snacks",
+      "price": 2.99,
+      "stock": 120,
+      "storeId": "store1",
+      "status": "ACTIVE"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "storeId": "STORE001",
+      "total": 45.99,
+      "status": "COMPLETED",
+      "createdAt": "2024-03-20T10:30:00Z",
+      "items": [
+        {
+          "productId": "1",
+          "category": "Fruits",
+          "quantity": 3,
+          "price": 2.99,
+          "name": "Organic Bananas"
+        },
+        {
+          "productId": "2",
+          "category": "Dairy",
+          "quantity": 2,
+          "price": 3.49,
+          "name": "Whole Milk"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "storeId": "STORE001",
+      "total": 32.5,
+      "status": "COMPLETED",
+      "createdAt": "2024-03-21T14:20:00Z",
+      "items": [
+        {
+          "productId": "3",
+          "category": "Bakery",
+          "quantity": 4,
+          "price": 2.49,
+          "name": "Wheat Bread"
+        },
+        {
+          "productId": "8",
+          "category": "Dairy",
+          "quantity": 3,
+          "price": 4.99,
+          "name": "Greek Yogurt"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "storeId": "store2",
+      "total": 28.75,
+      "status": "COMPLETED",
+      "createdAt": "2024-03-21T15:45:00Z",
+      "items": [
+        {
+          "productId": "4",
+          "category": "Meat",
+          "quantity": 2,
+          "price": 8.99
+        },
+        {
+          "productId": "5",
+          "category": "Beverages",
+          "quantity": 5,
+          "price": 1.99
+        }
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "id": "1",
+      "productId": "1",
+      "storeId": "store1",
+      "name": "Organic Bananas",
+      "brand": "Fresh Farms",
+      "category": "Fruits",
+      "price": 2.99,
+      "quantity": 150,
+      "status": "ACTIVE",
+      "createdAt": "2024-03-21T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "productId": "2",
+      "storeId": "store1",
+      "name": "Whole Milk",
+      "brand": "Dairy Best",
+      "category": "Dairy",
+      "price": 3.49,
+      "quantity": 75,
+      "status": "ACTIVE",
+      "createdAt": "2024-03-21T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "productId": "4",
+      "storeId": "store2",
+      "name": "Chicken Breast",
+      "brand": "Fresh Meats",
+      "category": "Meat",
+      "price": 8.99,
+      "quantity": 45,
+      "status": "ACTIVE",
+      "createdAt": "2024-03-21T10:00:00Z"
+    },
+    {
+      "id": "4",
+      "productId": "5",
+      "storeId": "store2",
+      "name": "Cola",
+      "brand": "Refresho",
+      "category": "Beverages",
+      "price": 1.99,
+      "quantity": 200,
+      "status": "ACTIVE",
+      "createdAt": "2024-03-21T10:00:00Z"
+    },
+    {
+      "id": "1738069707719",
+      "productId": "1",
+      "storeId": "STORE001",
+      "name": "Organic Bananas",
+      "brand": "Fresh Farms",
+      "category": "Fruits",
+      "price": 2.99,
+      "quantity": 0,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-28T13:08:27.719Z"
+    },
+    {
+      "id": "1738069712641",
+      "productId": "3",
+      "storeId": "STORE001",
+      "name": "Wheat Bread",
+      "brand": "Healthy Bake",
+      "category": "Bakery",
+      "price": 2.49,
+      "quantity": 0,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-28T13:08:32.641Z"
+    },
+    {
+      "id": "1738069862353",
+      "productId": "2",
+      "storeId": "STORE001",
+      "name": "Whole Milk",
+      "brand": "Dairy Best",
+      "category": "Dairy",
+      "price": 3.49,
+      "quantity": 2,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-28T13:11:02.353Z"
+    },
+    {
+      "id": "1738070395958",
+      "productId": "8",
+      "storeId": "STORE001",
+      "name": "Greek Yogurt",
+      "brand": "Dairy Best",
+      "category": "Dairy",
+      "price": 4.99,
+      "quantity": 5,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-28T13:19:55.958Z"
+    },
+    {
+      "id": "1738122050589",
+      "productId": "1",
+      "storeId": "STORE001",
+      "name": "Organic Bananas",
+      "brand": "Fresh Farms",
+      "category": "Fruits",
+      "price": 2.99,
+      "quantity": 4,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-29T03:40:50.589Z"
+    },
+    {
+      "id": "1738212005102",
+      "productId": "4",
+      "storeId": "STORE001",
+      "name": "Chicken Breast",
+      "brand": "Fresh Meats",
+      "category": "Meat",
+      "price": 8.99,
+      "quantity": 5,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-30T04:40:05.102Z"
+    },
+    {
+      "id": "1738212076426",
+      "productId": "5",
+      "storeId": "STORE001",
+      "name": "Cola",
+      "brand": "Refresho",
+      "category": "Beverages",
+      "price": 1.99,
+      "quantity": 4,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-30T04:41:16.426Z"
+    },
+    {
+      "id": "1738212227931",
+      "productId": "6",
+      "storeId": "STORE001",
+      "name": "Potato Chips",
+      "brand": "Crunchy's",
+      "category": "Snacks",
+      "price": 3.99,
+      "quantity": 6,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-30T04:43:47.931Z"
+    },
+    {
+      "id": "1738218517458",
+      "productId": "7",
+      "storeId": "STORE001",
+      "name": "Tomatoes",
+      "brand": "Fresh Farms",
+      "category": "Vegetables",
+      "price": 2.49,
+      "quantity": 10,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-30T06:28:37.458Z"
+    },
+    {
+      "id": "1738218769843",
+      "productId": "9",
+      "storeId": "STORE001",
+      "name": "Orange Juice",
+      "brand": "Fresh Squeeze",
+      "category": "Beverages",
+      "price": 4.49,
+      "quantity": 2,
+      "status": "ACTIVE",
+      "createdAt": "2025-01-30T06:32:49.843Z"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+.approvals-page {
+  padding: 24px;
+}
+
+.page-title {
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+.table-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadows-sm);
+  overflow: hidden;
+}
+
+.approvals-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.approvals-table th,
+.approvals-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--divider);
+}
+
+.approvals-table th {
+  background: var(--background-default);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--divider);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-main);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-success,
+.btn-danger {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-success {
+  background-color: var(--success-main);
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: var(--success-dark);
+}
+
+.btn-danger {
+  background-color: var(--error-main);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: var(--error-dark);
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary);
+}
+
+.error {
+  background: var(--error-light);
+  color: var(--error-main);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .approvals-page {
+    padding: 16px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Add styles for users management */
+.users-management {
+  padding: 24px;
+}
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.users-header h1 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--divider);
+}
+
+.users-table th {
+  background: var(--background-default);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.user-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.user-status.active {
+  background: var(--success-light);
+  color: var(--success-main);
+}
+
+.user-status.inactive {
+  background: var(--error-light);
+  color: var(--error-main);
+}
+
+.user-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.user-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.user-actions .edit-btn {
+  background: var(--primary-main);
+  color: white;
+}
+
+.user-actions .edit-btn:hover {
+  background: var(--primary-dark);
+}
+
+.user-actions .delete-btn {
+  background: var(--error-main);
+  color: white;
+}
+
+.user-actions .delete-btn:hover {
+  background: var(--error-dark);
+} 

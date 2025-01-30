@@ -1,0 +1,117 @@
+.stores-page {
+  padding: 20px;
+}
+
+.stores-page h1 {
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+.stores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.store-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.store-header h3 {
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status.active {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.status.inactive {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.status.pending {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.store-info {
+  margin-bottom: 20px;
+}
+
+.store-info p {
+  margin: 8px 0;
+  color: #4b5563;
+}
+
+.store-info strong {
+  color: #1a1a1a;
+}
+
+.store-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.store-actions button {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-primary:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+}
+
+.btn-danger:disabled {
+  background-color: #fca5a5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .stores-grid {
+    grid-template-columns: 1fr;
+  }
+} 

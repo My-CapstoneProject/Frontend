@@ -1,0 +1,175 @@
+.orders-container {
+  padding: 2rem;
+  background: #f8fafc;
+  min-height: calc(100vh - 64px);
+}
+
+.orders-header {
+  margin-bottom: 2rem;
+}
+
+.orders-header h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.table-container {
+  background: var(--background-paper);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--divider);
+}
+
+.orders-table th {
+  background: var(--background-default);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.orders-table tr:hover {
+  background: var(--background-default);
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.status-badge.processing {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.status-badge.completed {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.status-badge.cancelled {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.btn-sm {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Order Details Modal */
+.order-info {
+  padding: 1.5rem;
+}
+
+.info-group {
+  margin-bottom: 2rem;
+}
+
+.info-group h3 {
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-main);
+  display: inline-block;
+}
+
+.info-group p {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+.info-group strong {
+  color: var(--text-primary);
+  margin-right: 0.5rem;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.items-table th,
+.items-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--divider);
+}
+
+.items-table th {
+  background: var(--background-default);
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.no-orders {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .orders-container {
+    padding: 1rem;
+  }
+
+  .orders-table {
+    font-size: 0.875rem;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    padding: 0.75rem;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .orders-table {
+    min-width: 800px;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 1rem;
+  }
+
+  .items-table {
+    min-width: 500px;
+  }
+} 
